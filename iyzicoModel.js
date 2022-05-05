@@ -1,7 +1,7 @@
 var Iyzipay = require('iyzipay');
 
 const iyzico = (req,res,next) => {
-    const { cardNumber, expireMonth,expireYear, cardHolderName, cvc,registerCard , price , currency} = req.body;
+    const {cardNumber, expireMonth,expireYear, cardHolderName, cvc,registerCard , price , currency , subDate} = req.body;
     
     //TODO: Make validation for req.body
     var iyzipay = new Iyzipay({
